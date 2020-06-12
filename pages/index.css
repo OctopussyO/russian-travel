@@ -1,0 +1,336 @@
+@import url('../vendor/fonts/fonts.css');
+
+.page {
+  background-color: #2A2C2F;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
+}
+
+.page__content {
+  max-width: 1184px;
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page__section {
+  margin-bottom: 96px;
+}
+
+.page__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page__link {
+  color: #fff;
+}
+
+.page__link:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.header {
+  padding-top: 28px;
+}
+
+.header__main-zone {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 64px;
+}
+
+.header__logo {
+  background: url(../images/header-logo.svg);
+  width: 176px;
+  height: 52px;
+}
+
+.language-switcher {
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: .5%;
+}
+
+.language-switcher__language {
+  margin-left: 18px;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.language-switcher__language_active {
+  border-bottom: 1px solid #fff;
+}
+
+.header__content {
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 100%;
+}
+
+.header__title {
+  margin: 0 auto 24px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1.05;
+}
+
+.header__subtitle {
+  max-width: 65%;
+  margin: 0 auto 56px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.header__image-description {
+  max-width: 100%;
+  margin: 8px 0 0;
+  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.russia-info {
+  /* width: calc(984px - 3rem); 
+  max-width: 984px; */
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.russia-info__title {
+  margin: 0 auto 32px;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.1;
+}
+
+.russia-info__text {
+  max-width: 690px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.facts {
+  margin-top: 32px;
+}
+
+.fact {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.fact__span-accent {
+  font-weight: 700;
+}
+
+.photo-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 14px;
+}
+
+.photo-grid__item {
+  width: 100%;
+  object-fit: cover;
+}
+
+.places {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 47.5% calc(100% - 47.5% - 32px);
+  grid-template-rows: repeat(2, max-content);
+  grid-template-areas:  'title url'
+                        'image text';
+  grid-gap: 48px 32px;
+  margin-bottom: 69px;
+}
+
+.card__title {
+  grid-area: title;
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.05;
+}
+
+.card__image {
+  grid-area: image;
+  width: 100%;
+}
+
+.card__url {
+  grid-area: url;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card__link-marker {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: .2em;
+  margin-bottom: 1em;
+}
+
+.card__link {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.card__text-block {
+  grid-area: text;
+}
+
+.card__paragraph {
+  font-size: 18px;
+  line-height: 1.66;
+  margin: 0 auto 28px;
+}
+
+.cover {
+  width: 100%;
+  position: relative;
+  padding-bottom: 62.5%;
+  /* display: block; */
+  background: center / cover url('../images/cover-trains.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+}
+
+.cover__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2A2C2F;
+  opacity: .3;
+  z-index: 1;
+}
+
+.cover__text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.cover:hover>.cover__overlay {
+  opacity: .8;
+}
+
+.cover:hover {
+  cursor: pointer;
+}
+
+.cover__title {
+  text-align: center;
+  margin: 0 auto 32px;
+  max-width: 70%;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.05;
+}
+
+.cover__subtitle {
+  text-align: center;
+  margin: 0 auto 10px;
+  max-width: 30%;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__link {
+  text-decoration: none;
+  margin-right: 18px;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .page__content {
+    padding: 0 48px;
+  }
+
+  .header__control-zone {
+    width: 100%;
+  }
+
+  .photo-grid {
+    width: 100%;
+  }
+
+  .cover {
+    position: relative;
+    min-width: calc(100% + 96px);
+    left: -48px;
+  
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .page__content {
+    padding: 0 24px;
+  }
+  .header__image {
+    min-width: calc(100% + 96px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+}
