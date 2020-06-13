@@ -1,0 +1,25 @@
+.voyage__image-description {
+  max-width: 100%;
+  margin: 8px 0 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  .voyage__image-description {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .voyage__image-description {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 5px;
+  }
+}

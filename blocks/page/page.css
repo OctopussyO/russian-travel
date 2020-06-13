@@ -1,0 +1,15 @@
+@import url('./__content/page__content.css');
+@import url('./__section/page__section.css');
+@import url('./__list/page__list.css');
+@import url('./__link/page__link.css');
+
+.page {
+  background-color: #2A2C2F;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}

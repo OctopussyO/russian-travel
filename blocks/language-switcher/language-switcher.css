@@ -1,0 +1,17 @@
+@import url('./__language/language-switcher__language.css');
+@import url('./__language/_active/language-switcher__language_active.css');
+
+.language-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: .5%;
+}
+
+@media screen and (max-width: 600px) {
+  .language-switcher {
+    padding-bottom: 1.5%;
+  }
+}

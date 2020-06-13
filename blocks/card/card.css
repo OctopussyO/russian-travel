@@ -1,0 +1,55 @@
+@import url('./__title/card__title.css');
+@import url('./__image/card__image.css');
+@import url('./__url/card__url.css');
+@import url('./__link-marker/card__link-marker.css');
+@import url('./__link/card__link.css');
+@import url('./__text-block/card__text-block.css');
+@import url('./__paragraph/card__paragraph.css');
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46.7% 40px calc(100% - 46.7% - 40px);
+  grid-template-columns: 46.7% calc(100% - 46.7% - 40px);
+  -ms-grid-rows: -webkit-max-content 48px -webkit-max-content;
+  -ms-grid-rows: max-content 48px max-content;
+  grid-template-rows: repeat(2, -webkit-max-content);
+  grid-template-rows: repeat(2, max-content);
+  grid-template-areas:  'title url'
+                        'image text';
+  grid-gap: 48px 40px;
+  margin-bottom: 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    -ms-grid-columns: 47.4% 32px calc(100% - 44.4% - 32px);
+    grid-template-columns: 47.4% calc(100% - 44.4% - 32px);
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    -ms-grid-columns: 47.4% 28px calc(100% - 44.4% - 32px);
+    grid-template-columns: 47.4% calc(100% - 44.4% - 32px);
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px;
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    margin-bottom: 48px;
+  }
+}

@@ -1,0 +1,22 @@
+.voyage__subtitle {
+  max-width: 65%;
+  margin: 0 auto 64px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 1024px) {
+  .voyage__subtitle {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .voyage__subtitle {
+    max-width: 85%;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+}

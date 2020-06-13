@@ -1,0 +1,8 @@
+.page__link {
+  color: #fff;
+}
+
+.page__link:hover {
+  opacity: .8;
+  cursor: pointer;
+}

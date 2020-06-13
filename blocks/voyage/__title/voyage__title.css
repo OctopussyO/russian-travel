@@ -1,0 +1,16 @@
+.voyage__title {
+  max-width: 95%;
+  margin: 0 auto 24px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1.05;
+}
+
+@media screen and (max-width: 750px) {
+  .voyage__title {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+}
