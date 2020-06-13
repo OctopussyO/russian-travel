@@ -108,8 +108,6 @@
 }
 
 .info {
-  /* width: calc(984px - 3rem); 
-  max-width: 984px; */
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -221,12 +219,10 @@
   width: 100%;
   position: relative;
   padding-bottom: 62.5%;
-  /* display: block; */
   background: center / cover url('../images/cover-trains.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-sizing: border-box; */
 }
 
 .cover__overlay {
@@ -241,6 +237,8 @@
 }
 
 .cover__text-wrapper {
+  color: #fff;
+  text-decoration: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -570,7 +568,6 @@
   }
 
   .card__image {
-    /* display: block; */
     width: calc(100% + 32px);
     position: relative;
     left: -16px;
