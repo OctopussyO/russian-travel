@@ -9,7 +9,6 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-
 }
 
 .page__content {
@@ -17,6 +16,8 @@
   min-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding-top: 28px;
+  padding-bottom: 24px;
 }
 
 .page__section {
@@ -38,18 +39,16 @@
   cursor: pointer;
 }
 
-.header {
-  padding-top: 28px;
-}
 
-.header__main-zone {
+
+.header {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 64px;
+  margin-bottom: 64px;
 }
 
 .header__logo {
-  background: url(../images/header-logo.svg);
+  background: center / cover url(../images/header-logo.svg);
   width: 176px;
   height: 52px;
 }
@@ -70,17 +69,15 @@
   border-bottom: 1px solid #fff;
 }
 
-.header__content {
+.voyage {
   padding-left: 100px;
   padding-right: 100px;
   box-sizing: border-box;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   width: 100%;
 }
 
-.header__title {
+.voyage__title {
+  max-width: 95%;
   margin: 0 auto 24px;
   text-align: center;
   font-weight: 900;
@@ -88,19 +85,19 @@
   line-height: 1.05;
 }
 
-.header__subtitle {
+.voyage__subtitle {
   max-width: 65%;
-  margin: 0 auto 56px;
+  margin: 0 auto 64px;
   text-align: center;
   font-size: 30px;
   line-height: 1.2;
 }
 
-.header__image {
+.voyage__image {
   width: 100%;
 }
 
-.header__image-description {
+.voyage__image-description {
   max-width: 100%;
   margin: 8px 0 0;
   align-self: flex-start;
@@ -110,29 +107,30 @@
   line-height: 1.4;
 }
 
-.russia-info {
+.info {
   /* width: calc(984px - 3rem); 
   max-width: 984px; */
   padding-left: 100px;
   padding-right: 100px;
 }
 
-.russia-info__title {
+.info__title {
   margin: 0 auto 32px;
   font-weight: 900;
   font-size: 54px;
   line-height: 1.1;
 }
 
-.russia-info__text {
+.info__text {
   max-width: 690px;
   width: 100%;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.65;
+  margin: 0;
 }
 
-.facts {
+.info__facts {
   margin-top: 32px;
 }
 
@@ -164,12 +162,12 @@
 
 .card {
   display: grid;
-  grid-template-columns: 47.5% calc(100% - 47.5% - 32px);
+  grid-template-columns: 46.7% calc(100% - 46.7% - 40px);
   grid-template-rows: repeat(2, max-content);
   grid-template-areas:  'title url'
                         'image text';
-  grid-gap: 48px 32px;
-  margin-bottom: 69px;
+  grid-gap: 48px 40px;
+  margin-bottom: 90px;
 }
 
 .card__title {
@@ -177,7 +175,7 @@
   margin: 0;
   font-weight: 900;
   font-size: 72px;
-  line-height: 1.05;
+  line-height: 1;
 }
 
 .card__image {
@@ -213,6 +211,10 @@
   font-size: 18px;
   line-height: 1.66;
   margin: 0 auto 28px;
+}
+
+.card__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .cover {
@@ -262,7 +264,7 @@
 .cover__title {
   text-align: center;
   margin: 0 auto 32px;
-  max-width: 70%;
+  max-width: 75%;
   font-weight: 900;
   font-size: 72px;
   line-height: 1.05;
@@ -270,8 +272,8 @@
 
 .cover__subtitle {
   text-align: center;
-  margin: 0 auto 10px;
-  max-width: 30%;
+  margin: 0;
+  max-width: 35%;
   font-size: 18px;
   line-height: 1.2;
 }
@@ -280,16 +282,18 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 24px;
 }
 
 .menu {
   display: flex;
 }
 
+.menu__item {
+  margin-right: 18px;
+}
+
 .menu__link {
   text-decoration: none;
-  margin-right: 18px;
   font-size: 16px;
   line-height: 1.15;
 }
@@ -302,35 +306,286 @@
 
 @media screen and (max-width: 1024px) {
   
-  .page__content {
-    padding: 0 48px;
+  .page__section {
+    margin-bottom: 94px;
   }
 
-  .header__control-zone {
-    width: 100%;
+  .page__content {
+    max-width: 1024px;
+  }
+
+  .header {
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 56px;
+  }
+
+  .voyage {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .voyage__subtitle {
+    margin-bottom: 56px;
+  }
+
+  .info {
+    padding-left: 48px;
+    padding-right: 48px;
   }
 
   .photo-grid {
-    width: 100%;
+    box-sizing: border-box;
+    padding-left: 48px;
+    padding-right: 48px;
+    gap: 14px;
   }
 
-  .cover {
-    position: relative;
-    min-width: calc(100% + 96px);
-    left: -48px;
-  
+  .places {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .card {
+    grid-template-columns: 47.4% calc(100% - 44.4% - 32px);
+    column-gap: 32px;
+  }
+
+  .footer {
+    box-sizing: border-box;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }
 
-@media screen and (max-width: 786px) {
-  .page__content {
-    padding: 0 24px;
+@media screen and (max-width: 768px) {
+  .page__section {
+    margin-bottom: 88px;
   }
-  .header__image {
-    min-width: calc(100% + 96px);
+
+  .header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .voyage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .voyage__image-description {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .photo-grid {
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 16px;
+  }
+
+  .places {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .card {
+    grid-template-columns: 47.4% calc(100% - 44.4% - 32px);
+    column-gap: 28px;
+    margin-bottom: 56px;
+  }
+
+  .card__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .card__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .cover__subtitle {
+    max-width: 55%;
+  }
+
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .page__section {
+    margin-bottom: 64px;
+  }
+
+  .voyage__title {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+
+  .voyage__subtitle {
+    max-width: 85%;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .info__title {
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    align-items: flex-end;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu__item {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .menu__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
+
+  .language-switcher {
+    padding-bottom: 1.5%;
+  }
+
+  .language-switcher__language {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .card {
+    display: block;
+  }
+
+  .card__title {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .card__url {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .card__image {
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 1.5%;
+    float: left;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 1.1;
+    max-width: 95%;
+    margin-bottom: 16px;
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.15;
+    max-width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    margin-top: 48px;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .page__content {
+    padding-top: 16px;
+  }
 
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 52px;
+  }
+
+  .voyage__image-description {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 5px;
+  }
+
+  .info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .photo-grid {
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-gap: 12px;
+  }
+
+  .places {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .card {
+    margin-bottom: 48px;
+  }
+
+  .card__title {
+    margin-bottom: 32px;
+  }
+
+  .card__url {
+    display: none;
+  }
+
+  .card__image {
+    /* display: block; */
+    width: calc(100% + 32px);
+    position: relative;
+    left: -16px;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+  
+  .menu__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
