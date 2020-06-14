@@ -23,5 +23,7 @@
 @media screen and (max-width: 320px) {
   .card__title {
     margin-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

@@ -1,7 +1,8 @@
 @import url('./__title/voyage__title.css');
 @import url('./__subtitle/voyage__subtitle.css');
-@import url('./__image/voyage__image.css');
-@import url('./__image-description/voyage__image-description.css');
+@import url('./__figure/voyage__figure.css');
+@import url('./__figure-image/voyage__figure-image.css');
+@import url('./__figure-caption/voyage__figure-caption.css');
 
 .voyage {
   padding-left: 100px;

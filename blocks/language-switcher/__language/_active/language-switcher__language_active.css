@@ -1,3 +1,4 @@
 .language-switcher__language_active {
-  border-bottom: 1px solid #fff;
+  text-decoration: underline;
+  cursor: default;
 }

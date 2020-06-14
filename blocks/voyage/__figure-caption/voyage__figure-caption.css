@@ -1,4 +1,4 @@
-.voyage__image-description {
+.voyage__figure-caption {
   max-width: 100%;
   margin: 8px 0 0;
   -ms-flex-item-align: start;
@@ -10,14 +10,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .voyage__image-description {
+  .voyage__figure-caption {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .voyage__image-description {
+  .voyage__figure-caption {
     padding-left: 16px;
     padding-right: 16px;
     margin-top: 5px;

@@ -8,7 +8,6 @@
 @media screen and (max-width: 750px) {
   .info__title {
     font-size: 32px;
-    line-height: 1.1;
     margin-bottom: 40px;
   }
 }

@@ -1,5 +1,6 @@
 .card__link-marker {
   color: #aaa;
+  text-transform: uppercase;
   font-size: 12px;
   line-height: 1;
   letter-spacing: .2em;
