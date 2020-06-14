@@ -5,18 +5,7 @@
 
 @media screen and (max-width: 600px) {
   .card__image {
-    width: 45%;
-    margin-right: 5%;
-    margin-bottom: 1.5%;
-    float: left;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .card__image {
     width: 100%;
-    float: none;
-    margin-right: 0;
     margin-bottom: 28px;
   }
 }

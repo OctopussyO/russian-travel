@@ -1,6 +1,8 @@
 @import url('./__title/info__title.css');
 @import url('./__text/info__text.css');
 @import url('./__facts/info__facts.css');
+@import url('./__fact/info__fact.css');
+@import url('./__fact-accent/info__fact-accent.css');
 
 .info {
   padding-left: 100px;
