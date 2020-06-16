@@ -2,3 +2,8 @@
   text-decoration: underline;
   cursor: default;
 }
+
+.language-switcher__language_active:hover {
+  opacity: 1;
+  cursor: default;
+}
