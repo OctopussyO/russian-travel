@@ -6,14 +6,10 @@
   line-height: 1.5;
 }
 
-/* Прошу прощения, не знала, что общий комментарий может меняться, раньше не сталкивалась, */
-/* не увидела там в предыдущий раз замечание. */
-/*Ховер я добавила, но в макете его не было, поэтому и у меня раньшеего не было*/
 .language-switcher__language:hover {
   opacity: .8;
   cursor: pointer;
 }
-
 
 @media screen and (max-width: 600px) {
   .language-switcher__language {
